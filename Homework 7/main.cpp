@@ -1,4 +1,4 @@
-//Вывести фигуры из файла (3)
+п»ї//Р’С‹РІРµСЃС‚Рё С„РёРіСѓСЂС‹ РёР· С„Р°Р№Р»Р° (3)
 
 #include<iostream>
 using namespace std;
@@ -7,7 +7,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int n;
-	cout << "Введите размер доски: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РґРѕСЃРєРё: "; cin >> n;
 	setlocale(LC_ALL, "C");
 
 	for (int i = 0; i < n; i++)
