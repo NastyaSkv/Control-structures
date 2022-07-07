@@ -1,4 +1,4 @@
-//разбираем 1ю задачу про палиндром и 3ю - шутер
+п»ї//СЂР°Р·Р±РёСЂР°РµРј 1СЋ Р·Р°РґР°С‡Сѓ РїСЂРѕ РїР°Р»РёРЅРґСЂРѕРј Рё 3СЋ - С€СѓС‚РµСЂ
 
 #include<iostream>
 #include<conio.h>
@@ -22,13 +22,13 @@ void main()
 	setlocale(LC_ALL, "");
 #ifdef PALINDROM
 
-	int number;// число введенное с клавиатуры
-	int reverse = 0; //число, записанное наоборот
-	cout << "Введенное число: "; cin >> number;
-	int buffer = number; //создаем копию введенного числа, чтобы обеспечить неизменность 
+	int number;// С‡РёСЃР»Рѕ РІРІРµРґРµРЅРЅРѕРµ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+	int reverse = 0; //С‡РёСЃР»Рѕ, Р·Р°РїРёСЃР°РЅРЅРѕРµ РЅР°РѕР±РѕСЂРѕС‚
+	cout << "Р’РІРµРґРµРЅРЅРѕРµ С‡РёСЃР»Рѕ: "; cin >> number;
+	int buffer = number; //СЃРѕР·РґР°РµРј РєРѕРїРёСЋ РІРІРµРґРµРЅРЅРѕРіРѕ С‡РёСЃР»Р°, С‡С‚РѕР±С‹ РѕР±РµСЃРїРµС‡РёС‚СЊ РЅРµРёР·РјРµРЅРЅРѕСЃС‚СЊ 
 	while (buffer)
 	{
-		reverse *= 10; //освобождаем младший разряд для сохранения следующей цифры
+		reverse *= 10; //РѕСЃРІРѕР±РѕР¶РґР°РµРј РјР»Р°РґС€РёР№ СЂР°Р·СЂСЏРґ РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ СЃР»РµРґСѓСЋС‰РµР№ С†РёС„СЂС‹
 		reverse += buffer % 10;
 		buffer /= 10;
 	}
@@ -37,11 +37,11 @@ void main()
 	cout << reverse << endl;
 	if (reverse == number)
 	{
-		cout << "Палиндром" << endl;
+		cout << "РџР°Р»РёРЅРґСЂРѕРј" << endl;
 	}
 	else
 	{
-		cout << "обычное число" << endl;
+		cout << "РѕР±С‹С‡РЅРѕРµ С‡РёСЃР»Рѕ" << endl;
 	}
 #endif
 
@@ -51,14 +51,14 @@ void main()
 	{
 		key = _getch();
 		//cout << (int)key << "\t" << key << endl;
-		if (key == 'w' || key == 'W' || key == UP_ARROW)             cout << "Вперед" << endl;
-		else if (key == 's' || key == 'S' || key == DOWN_ARROW)      cout << "Назад" << endl;
-		else if (key == 'a' || key == 'A' || key == LEFT_ARROW)      cout << "Влево" << endl;
-		else if (key == 'd' || key == 'D' || key == RIGHT_ARROW)     cout << "Вправо" << endl;
-		else if (key == ' ')                                         cout << "Прыжок" << endl;
-		else if (key == Enter)                                       cout << "Огонь" << endl;
-		else if (key == Escape)                                      cout << "Выход" << endl;
-		else if (key != -32)      cout << "Error: нет такого действия, см. инструкцию" << endl;
+		if (key == 'w' || key == 'W' || key == UP_ARROW)             cout << "Р’РїРµСЂРµРґ" << endl;
+		else if (key == 's' || key == 'S' || key == DOWN_ARROW)      cout << "РќР°Р·Р°Рґ" << endl;
+		else if (key == 'a' || key == 'A' || key == LEFT_ARROW)      cout << "Р’Р»РµРІРѕ" << endl;
+		else if (key == 'd' || key == 'D' || key == RIGHT_ARROW)     cout << "Р’РїСЂР°РІРѕ" << endl;
+		else if (key == ' ')                                         cout << "РџСЂС‹Р¶РѕРє" << endl;
+		else if (key == Enter)                                       cout << "РћРіРѕРЅСЊ" << endl;
+		else if (key == Escape)                                      cout << "Р’С‹С…РѕРґ" << endl;
+		else if (key != -32)      cout << "Error: РЅРµС‚ С‚Р°РєРѕРіРѕ РґРµР№СЃС‚РІРёСЏ, СЃРј. РёРЅСЃС‚СЂСѓРєС†РёСЋ" << endl;
 	} while (key != Escape);
 #endif
 }
