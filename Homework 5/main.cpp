@@ -1,4 +1,4 @@
-//Вывести фигуры из файла
+п»ї//Р’С‹РІРµСЃС‚Рё С„РёРіСѓСЂС‹ РёР· С„Р°Р№Р»Р°
 
 #include<iostream>
 using namespace std;
@@ -15,7 +15,7 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 	int n;
-	cout << "Введите размер фигуры:"; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ С„РёРіСѓСЂС‹:"; cin >> n;
 
 #ifdef SQUARE_0
 	for (int i = 0; i < n; i++)
