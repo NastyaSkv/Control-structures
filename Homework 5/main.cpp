@@ -3,12 +3,12 @@
 #include<iostream>
 using namespace std;
 
-//#define SQUARE_0
-//#define TRIANGLE_1
-//#define TRIANGLE_2
-//#define TRIANGLE_3
-//#define TRIANGLE_4
-//#define RHOMBUS_5
+#define SQUARE_0
+#define TRIANGLE_1
+#define TRIANGLE_2
+#define TRIANGLE_3
+#define TRIANGLE_4
+#define RHOMBUS_5
 #define SQUARE_6
 
 void main()

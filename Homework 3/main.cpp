@@ -7,7 +7,7 @@ using namespace std;
 
 //#define TASK_1
 //#define TASK_2
-#define TASK_3
+//#define TASK_3
 
 void main()
 {

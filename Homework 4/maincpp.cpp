@@ -5,7 +5,7 @@
 using namespace std;
 
 //#define TASK_1
-#define TASK_2
+//#define TASK_2
 
 void main()
 {
