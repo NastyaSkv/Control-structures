@@ -1,4 +1,4 @@
-//FOR
+п»ї//FOR
 #include<iostream>
 using namespace std;
 
@@ -7,14 +7,14 @@ void main()
 	setlocale(LC_ALL, "");
 	//for(counter; condition; expression)
 
-	//напишем бесконечный for
+	//РЅР°РїРёС€РµРј Р±РµСЃРєРѕРЅРµС‡РЅС‹Р№ for
 	/*for (;;)
 	{
 		cout << "Hello";
 	}*/
 
 	int n;
-	cout << "Введите количество итераций: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№: "; cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cout << i << "\t";
