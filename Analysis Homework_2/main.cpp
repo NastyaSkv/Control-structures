@@ -15,7 +15,9 @@ using std::endl;
 #define RIGHT_ARROW 77
 
 //#define PALINDROM
-#define SHOOTER
+//#define SHOOTER_1
+#define SHOOTER_2
+
 
 void main()
 {
@@ -45,7 +47,7 @@ void main()
 	}
 #endif
 
-#ifdef SHOOTER
+#ifdef SHOOTER_1
 	char key;
 	do
 	{
@@ -61,4 +63,40 @@ void main()
 		else if (key != -32)      cout << "Error: нет такого действия, см. инструкцию" << endl;
 	} while (key != Escape);
 #endif
+
+#ifdef SHOOTER_2
+	char key;
+	do
+	{
+		key = _getch();
+		switch (key)
+		{
+		/*case UP_ARROW: cout << "Вперед" << endl; break;
+		case 'w': cout << "Вперед" << endl; break;
+		case 'W': cout << "Вперед" << endl; break;
+		case DOWN_ARROW: cout << "Назад" << endl; break;
+		case 's': cout << "Назад" << endl; break;
+		case 'S': cout << "Назад" << endl; break;
+		case LEFT_ARROW: cout << "Влево" << endl; break;
+		case 'a': cout << "Влево" << endl; break;
+		case 'A': cout << "Влево" << endl; break;
+		case RIGHT_ARROW: cout << "Вправо" << endl;break;
+		case 'd': cout << "Вправо" << endl; break;
+		case 'D': cout << "Вправо" << endl; break;*/
+//этот код можно сократить:
+		case 'w': case 'W': case UP_ARROW:   cout << "Вперед" << endl; break;
+		case 's': case 'S': case DOWN_ARROW: cout << "Назад" << endl;  break;
+		case 'a': case 'A': case LEFT_ARROW: cout << "Влево" << endl;  break;
+		case 'd': case 'D': case RIGHT_ARROW:cout << "Вправо" << endl; break;
+		
+		case ' ': cout << "Прыг-скок" << endl; break;
+		case Enter: cout << "Огонь" << endl; break;
+		case Escape: cout << "Выход" << endl;     //т.к. у стрелочек по 2 возвр знач.
+		case -32: break;                          //т.к. у стрелочек по 2 возвр знач.
+		default: cout << "Error" << endl;
+		}
+
+	} while (key != Escape); //условие выхода из программы
+#endif
 }
+
