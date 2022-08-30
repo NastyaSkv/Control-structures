@@ -145,11 +145,11 @@ void main()
 		for (int j = 0; j <= i; j++)cout << " "; cout << "\\";
 		for (int j = i; j < n - 1; j++)cout << "  "; cout << "/";
 		cout << endl;
-	}
+	} 
 #endif
 #ifdef SQUARE_6
 
-	int t = n;
+	/*int t = n;
 	for (int i = 0; i < t; i++)
 	{
 		int m = i % 2;
@@ -185,20 +185,16 @@ void main()
 			} while (n > 0);
 		}
 		cout << endl;
+	}*/
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+			//if ((i + j) % 2 == 0)cout << "+ ";else cout << "- ";
+			//(i + j) % 2 == 0 ? cout << "+ " : cout << "- ";
+			//cout << ((i + j) % 2 == 0 ? "+ " : "- ");
+			cout << ((i + j) % 2 ? "+ " : "- ");
+		cout << endl;
 	}
+	true;
 #endif
-	/*	int counter = 0;
-		for (int i = 0; i < n; i++)
-		{
-			for (int j = 0; j < n; j++)
-			{
-				//if ((i + j) % 2 == 0) cout << "+ "; else cout << "- ";
-				//(i + j) % 2 == 0 ? cout << "+ ": cout << "- ";
-				//cout << ((i + j) % 2 == 0 ? "+ " : "- ");
-				cout << ((i + j) % 2 ? "+ " : "- ");
-			}
-			cout << endl;
-
-		}
-		true;*/
 }
