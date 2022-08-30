@@ -83,7 +83,7 @@ void main()
 #endif
 
 #ifdef TRIANGLE_4
-	for (int i = n; i > 0; i--)
+	/*for (int i = n; i > 0; i--)
 	{
 		for (int j = i; j > 1; j--)
 		{
@@ -95,11 +95,17 @@ void main()
 			cout << "*";
 		}
 		cout << endl;
+	}*/
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = i; j < n - 1; j++)cout << "  ";
+		for (int j = 0; j <= i; j++)cout << "* ";
+		cout << endl;
 	}
 #endif
 
 #ifdef RHOMBUS_5
-	for (int i = n; i > 0; i--)
+	/*for (int i = n; i > 0; i--)
 	{
 		for (int j = i; j > 0; j--)
 		{
@@ -127,6 +133,18 @@ void main()
 			cout << "  ";
 		}
 		cout << "/" << endl;
+	}*/
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = i; j < n; j++)cout << " ";	cout << "/";
+		for (int j = 0; j < i; j++)cout << "  "; cout << "\\";
+		cout << endl;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j <= i; j++)cout << " "; cout << "\\";
+		for (int j = i; j < n - 1; j++)cout << "  "; cout << "/";
+		cout << endl;
 	}
 #endif
 #ifdef SQUARE_6
